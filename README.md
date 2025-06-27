@@ -1,69 +1,60 @@
-# React + TypeScript + Vite
+# JSXpress 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Quick & Easy React Boilerplate — ship your React projects fast & clean ⚡
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚙️ Vite — super fast dev environment
+- ⚛️ React Router DOM — easy routing out of the box
+- 🌙 Dark / Light Theme — effortless theme switching
+- 🎨 Tailwind CSS — modern styling ready to go
+- 🪞 shadcn/ui — accessible & beautiful UI components
+- 🌍 i18n — internationalization ready (via react-i18next)
+- ✨ Prettier — automatic code formatting
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Clone the boilerplate
+git clone https://github.com/teovlt/jsxpress.git
 
-```js
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+cd jsxpress
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+# Install dependencies
+pnpm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+# Start the dev server
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Folder Structure
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
 ```
+src/
+ ├─ components/
+ ├─ lib/
+ ├─ locales/
+ ├─ pages/
+ ├─ providers/
+ ├─ router/
+ ├─ styles/
+ └─ App.jsx
+```
+
+## Scripts
+
+- pnpm dev — start the development server
+- pnpm build — build for production
+- pnpm format — format code with Prettier
+
+## Author
+
+Made with 💻 by [teovlt](https://github.com/teovlt)
+
+## License
+
+MIT — Use it, hack it, ship it 🚀
+
+---
+
+JSXpress — Your next React app, express mode.
