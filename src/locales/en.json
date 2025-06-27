@@ -1,3 +1,15 @@
 {
-  "home": "Home"
+  "pages": {
+    "home": {
+      "home": "Home"
+    }
+  },
+  "navbar": {
+    "home": "Home",
+    "language": "Language",
+    "languageChanged": "Language changed to English."
+  },
+  "footer": {
+    "rights": "Your company. All rights reserved."
+  }
 }

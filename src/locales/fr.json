@@ -1,3 +1,15 @@
 {
-  "home": "Accueil"
+  "pages": {
+    "home": {
+      "home": "Accueil"
+    }
+  },
+  "navbar": {
+    "home": "Accueil",
+    "language": "Langage",
+    "languageChanged": "Langage changé en français."
+  },
+  "footer": {
+    "rights": "Votre entreprise. Tous droits réservés."
+  }
 }
