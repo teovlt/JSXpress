@@ -2,7 +2,7 @@ import { Github } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export const Footer = () => {
   const currentYear = new Date().getFullYear();
   const { t } = useTranslation();
 
@@ -26,4 +26,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
